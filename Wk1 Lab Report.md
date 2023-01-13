@@ -3,7 +3,7 @@
 &nbsp;
 
 ## Step 1: Open Visual Studio Code
-
+![image](images/vscode.png)
 
 ## Step 2: Open Terminal and Connect Remotely
 
