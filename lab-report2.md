@@ -34,6 +34,7 @@
         double[] input1 = { 10, 20, 30, 30, 40 };
         assertEquals(30.0, ArrayExamples.averageWithoutLowest(input1), 0);
     }
+
 ### Symptom
 ![JUnit Test](images/sc4.PNG)
 ### Before
