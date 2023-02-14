@@ -11,6 +11,7 @@
     written_2/non-fiction/OUP/Abernathy/ch7.txt:0
     written_2/non-fiction/OUP/Abernathy/ch8.txt:10
     written_2/non-fiction/OUP/Abernathy/ch9.txt:0
+    
 The `grep -c` command gives an output of the number of lines that the text file contains the word inputted. This could be useful when someone is trying to find how many occurences of a particular word is found within each file.
 
     $ grep -c "the" written_2/non-fiction/OUP/Berk/*.txt
@@ -18,6 +19,7 @@ The `grep -c` command gives an output of the number of lines that the text file 
     written_2/non-fiction/OUP/Berk/ch2.txt:183
     written_2/non-fiction/OUP/Berk/CH4.txt:189
     written_2/non-fiction/OUP/Berk/ch7.txt:125
+    
 This command finds the number of times `the` is contained within each file in the specific directory. The ouptut gives the file name and the number of lines that contains the word.
 
 ---
@@ -40,6 +42,7 @@ This command finds the number of times `the` is contained within each file in th
             $$$HK$l,600 to HK$2,500
             $$HK$950 to HK$1,600
             $below HK$950
+            
 The `grep -v` command removes all occurrences of the given input in this case `the` and prints out the file without the word in it. This is useful when trying to remove a specific word from the whole file.
 
     $ grep -v "Los Angeles" written_2/non-fiction/OUP/Castro/chV.txt 
@@ -83,6 +86,7 @@ This command removes the word `Los Angeles` from the whole text file. This might
 ---
 
 ## grep -l
+
     $ grep -l "Japan" written_2/travel_guides/berlitz1/*.txt
     written_2/travel_guides/berlitz1/HandRJamaica.txt
     written_2/travel_guides/berlitz1/HistoryHawaii.txt
@@ -106,16 +110,19 @@ This command removes the word `Los Angeles` from the whole text file. This might
     written_2/travel_guides/berlitz1/WhereToLosAngeles.txt
     written_2/travel_guides/berlitz1/WhereToMadrid.txt
     written_2/travel_guides/berlitz1/WhereToMalaysia.txt
+    
 The command `grep -l` takes the input and outputs only the file names with the word within the file. For this example, the files outputted were the only files within the directory that had Japan somewhere within the text.
 
     $ grep -l "unimaginative" written_2/travel_guides/berlitz1/*.txt
     written_2/travel_guides/berlitz1/IntroHongKong.txt
     written_2/travel_guides/berlitz1/WhatToJamaica.txt
+    
 This command causes only two files to show because these were the only files to contains the word. This could be useful to see if a certain word is obscure or not common within the directory.
 
 ---
 
 ## grep -i
+
     $ grep -i "finding" written_2/travel_guides/berlitz1/*.txt
     written_2/travel_guides/berlitz1/HandRIstanbul.txt:        Finding accommodation in Istanbul is rarely a problem, as
     written_2/travel_guides/berlitz1/HistoryEdinburgh.txt:        Finding his forces outnumbered and overextended here, the
@@ -134,6 +141,7 @@ This command causes only two files to show because these were the only files to 
     written_2/travel_guides/berlitz1/WhereToMalaysia.txt:        enjoy the rural and forested Malaysia. But finding your way around the
     written_2/travel_guides/berlitz1/WhereToMalaysia.txt:        surveyor, who in 1885 reported the finding of the “fine plateau. ” His
     written_2/travel_guides/berlitz1/WhereToMallorca.txt:        no trouble finding it. Steps lead down the hill through sprawling
+    
 The command `grep -i` is used to find specific words within files no matter the case the letters are. For this example, the output gives lines that included both `finding` and `Finding` because it ignores the case.
 
     $ grep -i "breakfast" written_2/travel_guides/berlitz1/*.txt
@@ -168,4 +176,5 @@ The command `grep -i` is used to find specific words within files no matter the 
     written_2/travel_guides/berlitz1/WhereToItaly.txt:        Make an early start with breakfast (or come back for a late
     written_2/travel_guides/berlitz1/WhereToItaly.txt:        place for breakfast surrounded by 17th- and 18th-century palazzi and
     written_2/travel_guides/berlitz1/WhereToMalaysia.txt:        thousands of moths from the jungle. They make an ideal breakfast for
+    
 This command finds every occurence of the word `breakfast` no matter the case of the letters. This could be useful when trying to find a word even when it starts with a captial letter.
