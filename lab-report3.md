@@ -178,10 +178,3 @@ The command `grep -i` is used to find specific words within files no matter the 
     written_2/travel_guides/berlitz1/WhereToMalaysia.txt:        thousands of moths from the jungle. They make an ideal breakfast for
     
 This command finds every occurence of the word `breakfast` no matter the case of the letters. This could be useful when trying to find a word even when it starts with a captial letter.
-
-
----
----
----
----
----
