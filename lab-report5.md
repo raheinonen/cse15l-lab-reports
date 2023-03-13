@@ -27,3 +27,7 @@ Lab report 4 involved tasks that we had to do quickly to practice running comman
 ![sc1](images/test3.png)
 * After exiting nano, you first enter `sh ../continue.sh` in order to run the next sh script. The `../` is necessary because the sh script is inside the main directory while you are currently in the `lab7/` directory. 
 * The sh script completes the rest of the commands including running the file, commiting the file, and pushing the file to github.
+
+---
+
+With the use of bash script, it is much easier and faster to run all the commands/tasks. I was able to finish all tasks in about 20 seconds when it took me over 2 mintues when doing the tasks without the bash scripts.
